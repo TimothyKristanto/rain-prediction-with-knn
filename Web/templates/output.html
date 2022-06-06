@@ -21,24 +21,33 @@
     </div>
 
     <h3 class="text-center mt-5">
-      Prediksi Model AI: {{ 'Hujan' if output == 1 else 'Tidak Hujan' }}
+      Notifikasi: {{ ' Akan Turun Hujan!' if output == 1 else 'Tidak Akan Hujan'
+      }}
     </h3>
 
     <div class="d-flex justify-content-center mt-5">
       {% if output == 0 %}
-      <img
-        src="{{ url_for('static', filename='images/open-window.jpeg') }}"
-        width="450"
-        height="450"
-        class="mx-3"
-      />
+      <div>
+        <img
+          src="{{ url_for('static', filename='images/open-window.jpeg') }}"
+          width="450"
+          height="450"
+          class="mx-3"
+        />
+        <h3 class="text-center">Jendela Dibuka</h3>
+      </div>
+
       {% else %}
-      <img
-        src="{{ url_for('static', filename='images/close-window.png') }}"
-        width="450"
-        height="450"
-        class="mx-3"
-      />
+      <div>
+        <img
+          src="{{ url_for('static', filename='images/close-window.png') }}"
+          width="450"
+          height="450"
+          class="mx-3"
+        />
+        <h3 class="text-center">Jendela Ditutup</h3>
+      </div>
+
       {% endif %}
     </div>
 
