@@ -4,7 +4,7 @@
 
 Sistem machine learning berbasis aplikasi web yang dapat melakukan prediksi akan turunnya hujan dan memberikan respon berdasarkan hasil prediksi tersebut. Responnya sendiri berupa simulasi penutupan atau pembukaan jendela atau kanopi atau alat pelindung hujan lainnya dalam web tersebut.
 
-## Hal-hal yang Harus Dilakukan Setelah Clone atau Download
+## Bila Ada Error Saat Menjalankan Aplikasi, Silahkan Lakukan Langkah-langkah di Bawah Ini
 
 1. Ketikkan command dibawah pada terminal PC atau Laptop Anda yang berada di path folder clone atau download
 
