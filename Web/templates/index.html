@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Prediksi Hujan</title>
+  </head>
+      <div class="d-flex justify-content-center">
+        <h1 class="my-3">Persepsi Agen</h1>
+      </div>
+      <div class="d-flex justify-content-center">
+        <form
+        action="/output"
+        method="post"
+        class="w-75 border border-2 border-dark rounded-lg px-5 py-3 m-2"
+      >
+        <div class="mb-3 mt-3">
+          <label for="tempRate" class="form-label">Temperatur rata-rata</label>
+          <input
+            type="number"
+            class="form-control"
+            id="tempRate"
+            name="tempRate"
+            step=".001"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="tempMin" class="form-label">Temperatur minimum</label>
+          <input
+            type="number"
+            class="form-control"
+            id="tempMin"
+            name="tempMin"
+            step=".001"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="tempMax" class="form-label">Temperatur maksimum</label>
+          <input
+            type="number"
+            class="form-control"
+            id="tempMax"
+            name="tempMax"
+            step=".001"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="sunshine" class="form-label"
+            >Lamanya penyinaran matahari</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="sunshine"
+            name="sunshine"
+            step=".001"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="humidityRate" class="form-label"
+            >Kelembapan rata-rata</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="humidityRate"
+            name="humidityRate"
+            step=".001"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="windSpeedRate" class="form-label"
+            >Kecepatan angin rata-rata</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="windSpeedRate"
+            name="windSpeedRate"
+            step=".001"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="windSpeedMax" class="form-label"
+            >Kecepatan angin maksimum</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="windSpeedMax"
+            name="windSpeedMax"
+            step=".001"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="mostWind" class="form-label">Arah angin terbanyak</label>
+          <input
+            type="number"
+            class="form-control"
+            id="mostWind"
+            name="mostWind"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="windOnMaxSpeed" class="form-label"
+            >Arah angin saat kecepatan maksimum</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="windOnMaxSpeed"
+            name="windOnMaxSpeed"
+            step=".001"
+            required
+          />
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-dark mt-3 w-50">Lakukan Prediksi</button>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
