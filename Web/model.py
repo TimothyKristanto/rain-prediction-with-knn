@@ -65,12 +65,6 @@ from sklearn.metrics import accuracy_score, precision_score
 # for random in random_state:
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=61)
 
-from sklearn.model_selection import cross_val_score
-import numpy as np
-from sklearn.model_selection import GridSearchCV, KFold
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score, precision_score
-
 regular_model = KNeighborsClassifier()
 cv = KFold(n_splits=5, shuffle=True, random_state=7)
 
