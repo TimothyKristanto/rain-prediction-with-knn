@@ -22,9 +22,6 @@ ds = ds[ds["RR"] != 8888]
 ds.info()
 
 
-# In[22]:
-
-
 sns.displot(ds["RR"])
 
 
