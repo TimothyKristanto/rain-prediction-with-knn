@@ -32,17 +32,17 @@ py -3 -m venv .venv
 
 5. Ketikkan beberapa command dibawah pada terminal di Visual Studio Code
 
-### python pip install --upgrade pip
+### python -m pip install --upgrade pip
 
-### python pip install flask
+### python -m pip install flask
 
-### python pip install pandas
+### python -m pip install pandas
 
-### python pip install seaborn
+### python -m pip install seaborn
 
-### python pip install openpyxl
+### python -m pip install openpyxl
 
-### python pip install sklearn
+### python -m pip install sklearn
 
 6. Run aplikasi web dengan mengetikkan command di bawah ini pada terminal Visual Studio Code
 
