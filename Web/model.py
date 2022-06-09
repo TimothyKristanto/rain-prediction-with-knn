@@ -74,7 +74,6 @@ def makePrediction(data):
     y_pred = model.predict(data)
     return y_pred
 
-
 y_pred = makePrediction(X_test)
 
 print("Accuracy:", accuracy_score(y_test, y_pred))
